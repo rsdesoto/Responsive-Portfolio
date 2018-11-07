@@ -1,0 +1,422 @@
+
+/********************************************************
+** ELEMENTS *********************************************
+********************************************************/
+
+
+/* header information - this will be used for every page */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 85px;
+    width: 100%;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color:#cccccc;
+    border-width: 1px;
+    z-index: 1;
+}
+
+/* set background */
+
+body {
+    background-image: url("../images/connectwork.png");
+    background-repeat: repeat;
+}
+
+/* set headings, fonts, and hr break */
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    padding: 20px 0 20px 20px;
+    color: #4aaaa5;
+    font-weight: bold;
+}
+
+
+
+/* note - this is the FOOTER ONLY heading! */
+h6{
+    padding-top: 34px;
+    font-size: 10px;
+    color: #b8b8b8;
+    text-align: center;
+}
+
+hr{
+    width: 920px;
+    margin: auto;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    width: 920px;
+    background-color: #ffffff;
+    color: #777777;
+    height: 200px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* for the message page only - we want a much smaller margin for the form only */
+form > p {
+    margin-bottom: 5px;
+}
+
+
+
+/********************************************************
+** CLASSES **********************************************
+********************************************************/
+
+/* wrapper information */
+
+.wrapper{
+    width: 100%;
+}
+
+
+.footer{
+    clear: both;
+    width: 100%;
+    height: 50px;
+    background-color: RGB(100,100,100);
+    border-top: 8px solid #4aaaa5;
+    position: fixed;
+    bottom: 0; 
+}
+
+/* header information */
+
+.header-content{
+    width: 960px;
+    margin: auto;
+}
+
+.header-name{
+    float: left;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.header-right{
+    float: right;
+    margin-top: 29px;
+    padding: 5px 15px 5px 15px;
+    border-right: 1px solid #d4d4d4;
+}
+
+.header-right:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    transition: .8s ease;
+}
+
+.header-right-end{
+    float: right;
+    margin-top: 29px;
+    padding: 5px 0px 5px 15px;
+}
+
+.header-right-end:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    
+    transition: .8s ease;
+}
+
+
+
+
+
+
+/* page content styling */
+
+.page-contents{
+    clear: both;
+    width: 960px;
+    margin: auto;
+    margin-top: 110px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+
+
+
+/* form styling */
+
+.form-wrap{
+    margin: auto;
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 920px;
+    background-color: #ffffff;
+    color: grey;
+    font-size: 14px;
+}
+
+.input-text:active, .input-text:focus{
+    background-color: rgb(252, 242, 198);
+}
+
+
+.button-submit{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 35px;
+    width: 100px;
+}
+
+.button-submit:hover {
+    background-color: #174745;
+    transition: .5s ease;
+}
+
+
+
+/* all the weird positionings for the portfolio page */
+
+.portfolio-pic-l{
+    position: absolute;
+    width: 300px;
+    margin: 25px;
+}
+
+.portfolio-pic-r{
+    position: absolute;
+    left: 350px;
+    width: 300px;
+    height: 200;
+    margin: 25px;
+}
+
+.portfoliojpg{
+    width: 100%;
+    clear: both;
+}
+
+.portfolio-text{
+    background-color:rgb(74, 170, 165);
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    box-sizing: border-box;
+} 
+
+.portfolio-pic-l:hover {
+    outline: 25px solid rgba(74,170,165,.5);
+    outline-offset: -25px;
+    font-weight: bold;
+    /* font-size: 30px; */
+    transition: .8s ease;
+}
+
+.portfolio-pic-r:hover {
+    outline: 25px solid rgba(74,170,165,.5);
+    outline-offset: -25px;
+    font-weight: bold;
+    /* font-size: 30px; */
+    transition: .8s ease;
+}
+
+
+/* note RD, 2018/11/1 - this is to force the length of the page so that, despite
+the absolute positioning, each "row" of images shows up properly --> create a 
+dummy block that sits underneath the absolute positioned rows of images so that
+the next row of images starts in the right place 
+
+***** IF YOU CHANGE THE HEIGHT OF THE IMAGE BLOCKS, YOU MUST CHANGE THE 
+HEIGHT OF THIS BREAK BLOCK *********/
+
+.break{
+    clear: both;
+    width: 900px;
+    height: 230px;
+    padding: 25px;
+}
+
+/********************************************************
+** IDs **************************************************
+********************************************************/
+
+/* about me styling */
+
+#profile-pic{
+    float: left;
+    margin: 0px 10px 20px 20px;
+    width: 300px;
+}
+
+#profile-pic:hover{
+    outline: 25px solid rgba(74,170,165,.5);
+    outline-offset: -25px;
+    transition: .5s ease;
+}
+
+
+#about-me-text{
+    margin: 20px 20px 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+
+/*Use three `@media screen` tags, each with one of these `max-width`s: `980px`, `768px` and `640px`.
+
+   * You use `980px` because you never want any of the content to be cut off. Since the desktop layout is about 960px wide, you want the media queries to kick in before your content gets cut off.
+
+   * `768px` is about the width of a tablet and `640px` is about the width of a phone in landscape.
+
+6. Make the layout match the following screenshots:
+
+   * `index.html`: [980px](Images/980-index.jpg), [768px](Images/768-index.jpg), [640px](Images/640-index.jpg)
+
+   * `portfolio.html`: [980px](Images/980-portfolio.jpg), [768px](Images/768-portfolio.jpg), [640px](Images/640-portfolio.jpg)
+
+   * `contact.html`: [980px](Images/980-contact.jpg), [768px](Images/768-contact.jpg), [640px](Images/640-contact.jpg)
+
+7. Make the position of the header `static` (the default positioning) when the screen is `640px` wide. The header design takes up a lot of room; you don't want it to stick to the top of a small screen and leave no room for the rest of your site.
+
+8. Be sure to include the `viewport` tag in all your HTML files, otherwise your media-queries won't function as expected on mobile devices. _(Hint: You won't need to use exact pixels for anything other than the container)_
+
+9. **Protip**: Use the Chrome extensions [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh) and [Browser Width](https://chrome.google.com/webstore/detail/browser-width/mlnegepkjlccabakompdmbcmdieaideh) to see the browser dimensions in Chrome.
+
+10. Deploy your new portfolio (now with media queries!) to GitHub Pages.*/
+
+@media screen and (max-width: 980px) {
+    /* The body's bg color will be #333 */
+    .page-contents {
+        width: 748px;
+    }
+
+    hr{
+        width: 706px;
+        
+    }
+
+    .header-content{
+        width: 748px;
+    }
+  
+    /* The wrapper's width will be 600px
+    .wrapper {
+      width: 600px;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    .page-contents {
+        width: 625px;
+    }
+
+    hr{
+        width: 583px;
+        
+    }
+
+    .header-content{
+        width: 625px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    /* The body's bg color will be #333 */
+    .page-contents {
+        width: 400px;
+        margin-top: 45px;
+    }
+
+    hr{
+        width: 358px;
+    }
+
+    #profile-pic{
+        width: 350px;
+    }
+
+    header{
+        width: 100%;
+        position: static;
+    }
+
+    footer, .footer{
+        position: static;
+    }
+
+    .header-content{
+        width: 100%;
+    }
+
+    .header-name {
+        clear: both;
+        display: block;
+        padding: 10px 0 10px 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-right-end{
+        padding: 5px 20px 5px 20px;
+        margin: 5px 0px 5px 0px;
+    } 
+
+    .header-right{
+        padding: 5px 20px 5px 20px;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .header-row{
+        display: inline-block;
+        margin: auto;
+        
+    }
+
+    .header-row-wrap{
+        text-align: center;
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+
+
+}
+
+
+  
+
+
+
+
