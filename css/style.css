@@ -477,27 +477,27 @@ HEIGHT OF THIS BREAK BLOCK *********/
 
     #portfolio1{
         position: absolute;
-        top: 0;
+        top: 95px;
     }
     
     #portfolio2{
         position: absolute;
-        top: 312px;
+        top: 407px;
     }
 
     #portfolio3{
         position: absolute;
-        top: 624px;
+        top: 719px;
     }
 
     #portfolio4{
         position: absolute;
-        top: 936px;
+        top: 1031px;
     }
 
     #portfolio5{
         position: absolute;
-        top: 1248px;
+        top: 1343px;
     }
 
     .portfolio-text{
@@ -506,7 +506,7 @@ HEIGHT OF THIS BREAK BLOCK *********/
 
     .break{
         clear: both;
-        height: 475px;
+        height: 505px;
         padding: 10px;
     }
 
