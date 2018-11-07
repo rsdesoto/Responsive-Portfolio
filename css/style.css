@@ -336,6 +336,11 @@ HEIGHT OF THIS BREAK BLOCK *********/
         width: 748px;
     }
 
+    .break{
+        clear: both;
+        width: 748px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -378,6 +383,11 @@ HEIGHT OF THIS BREAK BLOCK *********/
         width: 275px;
     } 
 
+    .break{
+        clear: both;
+        width: 583px;
+    }
+
 }
 
 
@@ -402,6 +412,11 @@ HEIGHT OF THIS BREAK BLOCK *********/
 
     #profile-pic{
         width: 350px;
+    }
+
+    .break{
+        clear: both;
+        width: 358px;
     }
 
     header{
